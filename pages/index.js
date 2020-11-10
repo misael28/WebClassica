@@ -1,10 +1,14 @@
-function Home() {
+import Layout from "../components/Layout";
+
+const Home = () => {
   return (
     <div>
-      <h1>Galeria Classica</h1>
-      <h1>Site em construção.</h1>
+		<Layout>
+		<h1>Conheça nossas Lojas</h1>
+			<div>Mp consultoria</div>
+		</Layout>
     </div>
   );
-}
+};
 
 export default Home;
