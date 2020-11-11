@@ -26,6 +26,25 @@ const Cards = () => {
       </div>
 
       <style jsx>{`
+        body,
+        span,
+        p,
+        form,
+        img,
+        a,
+        ul,
+        ol,
+        li,
+        table,
+        tr,
+        td,
+        div {
+          margin: 0;
+          padding: 0;
+          border: none;
+          outline: none;
+          list-style-type: none;
+        }
         .global-container {
           min-height: 10em;
           min-width: 30em;
@@ -39,8 +58,8 @@ const Cards = () => {
         .card {
           height: 20em;
           width: 20em;
-          margin-left: 3rem;
-          margin-top: 1rem;
+          margin-left: 3em;
+          margin-top: 1em;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;

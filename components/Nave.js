@@ -15,13 +15,32 @@ const Nave = () => {
         </div>
       </div>
       <style jsx>{`
+        body,
+        span,
+        p,
+        form,
+        img,
+        a,
+        ul,
+        ol,
+        li,
+        table,
+        tr,
+        td,
+        div {
+          margin: 0;
+          padding: 0;
+          border: none;
+          outline: none;
+          list-style-type: none;
+        }
         .container {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
           background: green;
           height: 5em;
-          witdh: 100%;
+          witdh: 60em;
         }
 
         .logo {
@@ -37,7 +56,7 @@ const Nave = () => {
           color: white;
           text-decoration: none;
           padding: 10px;
-          margin-right: 10px;
+          margin-right: 20px;
           border: 1px solid gray;
         }
       `}</style>
