@@ -1,5 +1,5 @@
-import ws from "../imagens/ws.png";
-import lojaImg from "../imagens/loja.jpg";
+import ws from "./ws.png";
+import lojaImg from "./loja.jpg";
 
 const Cards = () => {
   return (
