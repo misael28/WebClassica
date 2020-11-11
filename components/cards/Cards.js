@@ -4,26 +4,25 @@ import lojaImg from "../imagens/loja.jpg";
 const Cards = () => {
   return (
     <div>
-     
-        <div className="card">
-          <img src={lojaImg} alt="loja" id="whats-app-logo" />
-          <div className="card-title">
-            <h2>Loja XXX</h2>
-          </div>
-          <div>
-            <p>Descrição da sua loja aqui, sala, serviços</p>
-          </div>
-          <div className="card-contact">
-            <div>7199999-0000</div>
-            <button>
-              <img
-                src={ws}
-                style={{ height: 50, width: 50 }}
-                alt="whats-app"
-                id="butao"
-              />
-            </button>
-          </div>
+      <div className="card">
+        <img src={lojaImg} alt="loja" id="whats-app-logo" />
+        <div className="card-title">
+          <h2>Loja XXX</h2>
+        </div>
+        <div>
+          <p>Descrição da sua loja aqui, sala, serviços</p>
+        </div>
+        <div className="card-contact">
+          <div>7199999-0000</div>
+          <button>
+            <img
+              src={ws}
+              style={{ height: 50, width: 50 }}
+              alt="whats-app"
+              id="butao"
+            />
+          </button>
+        </div>
       </div>
 
       <style jsx>{`
@@ -38,14 +37,10 @@ const Cards = () => {
         }
 
         .card {
-          border: 1px solid black;
-          border-radius: 3px;
           height: 20em;
           width: 20em;
-          text-align: center;
-
-		  margin-left: 3rem;
-		  margin-top: 1rem;
+          margin-left: 3rem;
+          margin-top: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
