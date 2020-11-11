@@ -1,5 +1,5 @@
-import Cards from "../components/Cards/Cards";
-import Nave from "../components/Nave/Nave";
+import Cards from "../components/Cards/Cards.js";
+import Nave from "../components/Nave/Nave.js";
 const Lojas = () => {
   return (
     <div>
@@ -7,16 +7,16 @@ const Lojas = () => {
       <div className="global-container">
         <h1>Sua loja aqui</h1>
       </div>
-	  <div className="wrap">
-	  <Cards />
-	  <Cards />
-	  <Cards />
-	  </div>
-		   <style jsx>{`
-		   .wrap{
-			   display:flex;
-			   flex-wrap:wrap;
-		   }
+      <div className="wrap">
+        <Cards />
+        <Cards />
+        <Cards />
+      </div>
+      <style jsx>{`
+        .wrap {
+          display: flex;
+          flex-wrap: wrap;
+        }
         .global-container {
           min-height: 10em;
           min-width: 30em;
