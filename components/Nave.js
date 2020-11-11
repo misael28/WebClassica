@@ -14,6 +14,9 @@ const Nave = () => {
           <Link href="/">
             <a className="index">Home</a>
           </Link>
+		  <Link href="/lojas">
+            <a className="lojas">Lojas</a>
+          </Link>
         </div>
       </div>
       <style jsx>{`
