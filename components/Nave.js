@@ -21,7 +21,7 @@ const Nave = () => {
           align-items: center;
           background: green;
           height: 5em;
-          witdh: 100em;
+          witdh: 100%;
         }
 
         .logo {
