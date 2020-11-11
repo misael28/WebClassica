@@ -1,4 +1,4 @@
-import Nave from "./Nave";
+import Nave from "../nav/Nave";
 const Layout = (props) => {
   return (
     <div>

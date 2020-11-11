@@ -1,5 +1,5 @@
 import Cards from "../components/cards/Cards";
-import Nave from "../components/Nave";
+import Nave from "../components/nav/Nave";
 const Lojas = () => {
   return (
     <div>
