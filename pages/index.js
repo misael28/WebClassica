@@ -1,4 +1,4 @@
-import Nave from "../components/Nave/Nave.js";
+import Nave from "../components/Nave.js";
 const Home = () => {
   return (
     <div>

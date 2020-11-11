@@ -1,5 +1,5 @@
-import Cards from "../components/Cards/Cards.js";
-import Nave from "../components/Nave/Nave.js";
+import Cards from "../components/Cards.js";
+import Nave from "../components/Nave.js";
 const Lojas = () => {
   return (
     <div>
