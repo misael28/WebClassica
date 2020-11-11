@@ -7,10 +7,16 @@ const Lojas = () => {
       <div className="global-container">
         <h1>Sua loja aqui</h1>
       </div>
-      <Cards />
+	  <div className="wrap">
 	  <Cards />
 	  <Cards />
-      <style jsx>{`
+	  <Cards />
+	  </div>
+		   <style jsx>{`
+		   .wrap{
+			   display:flex;
+			   flex-wrap:wrap;
+		   }
         .global-container {
           min-height: 10em;
           min-width: 30em;

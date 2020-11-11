@@ -1,14 +1,12 @@
-import Layout from "../components/Layout/Layout";
-
+import Nave from "../components/Nave/Nave";
 const Home = () => {
   return (
     <div>
-      <Layout>
+		<Nave/>
         <div className="global-container">
           <h1>Conheça nossas Lojas</h1>
           <div>Mp consultoria</div>
         </div>
-      </Layout>
       <style jsx>{`
         .global-container {
 		  min-height: 10em;

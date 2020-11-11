@@ -4,7 +4,7 @@ import lojaImg from "../imagens/loja.jpg";
 const Cards = () => {
   return (
     <div>
-      <div className="global-container">
+     
         <div className="card">
           <img src={lojaImg} alt="loja" id="whats-app-logo" />
           <div className="card-title">
@@ -24,7 +24,6 @@ const Cards = () => {
               />
             </button>
           </div>
-        </div>
       </div>
 
       <style jsx>{`
@@ -45,7 +44,8 @@ const Cards = () => {
           width: 20em;
           text-align: center;
 
-          margin: 1rem;
+		  margin-left: 3rem;
+		  margin-top: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
