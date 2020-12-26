@@ -26,25 +26,6 @@ const Cards = () => {
       </div>
 
       <style jsx>{`
-        body,
-        span,
-        p,
-        form,
-        img,
-        a,
-        ul,
-        ol,
-        li,
-        table,
-        tr,
-        td,
-        div {
-          margin: 0;
-          padding: 0;
-          border: none;
-          outline: none;
-          list-style-type: none;
-        }
         .global-container {
           min-height: 10em;
           min-width: 30em;
@@ -54,11 +35,10 @@ const Cards = () => {
           justify-content: center;
           align-items: center;
         }
-
         .card {
           height: 20em;
           width: 20em;
-          margin-left: 3em;
+          margin-left: 2.5em;
           margin-top: 1em;
           flex-basis: 45%;
           padding: 1.5rem;
@@ -69,7 +49,6 @@ const Cards = () => {
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
-
         .card img {
           height: 10em;
           width: 20em;
@@ -86,9 +65,66 @@ const Cards = () => {
           height: 50px;
           width: 50px;
         }
-
         button img {
           border-radius: 50%;
+        }
+        @media screen and (max-width: 600px) {
+          .global-container {
+            min-height: 10em;
+            max-width: 10em;
+            padding: 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .card img {
+            height: 10em;
+            width: 15em;
+          }
+          .card {
+            height: 20em;
+            width: 16em;
+            margin-left: 1em;
+            margin-top: 1em;
+            flex-basis: 45%;
+            padding: 1.5rem;
+            text-align: left;
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            transition: color 0.15s ease, border-color 0.15s ease;
+          }
+        }
+        @media screen and (max-width: 300px) {
+          .global-container {
+            min-height: 10em;
+            max-width: 10em;
+            padding: 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .card img {
+            height: 5em;
+            width: 10em;
+          }
+          .card {
+            height: 15em;
+            width: 10em;
+            margin-left: 1em;
+            margin-top: 1em;
+            flex-basis: 45%;
+            padding: 1.5rem;
+            text-align: left;
+            color: inherit;
+            text-decoration: none;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            transition: color 0.15s ease, border-color 0.15s ease;
+          }
         }
       `}</style>
     </div>

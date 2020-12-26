@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <div className="footer-container">feito por MP | 2020</div>
+      <div className="footer-container">Feito por MPConsultoria | 2020</div>
 
       <style jsx>{`
         body,
@@ -31,7 +31,6 @@ const Footer = () => {
           align-items: center;
           background: black;
           height: 5em;
-          witdh: 60em;
         }
       `}</style>
     </div>

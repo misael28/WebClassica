@@ -5,13 +5,16 @@ const Lojas = () => {
   return (
     <div>
       <Nave />
-      <div className="global-container">
-        <h1>Sua loja aqui</h1>
+      <div className="global-container-lojas">
+        <h1>Conheça nossas lojas</h1>
       </div>
       <div className="wrap">
         <Cards />
         <Cards />
         <Cards />
+		<Cards />
+		<Cards />
+		<Cards />
       </div>
       <Footer />
       <style jsx>{`
@@ -38,14 +41,28 @@ const Lojas = () => {
           display: flex;
           flex-wrap: wrap;
         }
-        .global-container {
-          min-height: 10em;
-          min-width: 30em;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+        @media screen and (max-width: 600px) {
+          .global-container-lojas {
+            min-height: 10em;
+            width: 10em;
+            padding: 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+          }
+        }
+        @media screen and (min-width: 600px) {
+          .global-container-lojas {
+            min-height: 10em;
+            min-width: 30em;
+            padding: 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
         }
       `}</style>
     </div>
