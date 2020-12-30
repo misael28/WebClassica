@@ -7,10 +7,10 @@ const Lojas = () => {
     <div>
       <Nave />
       <div className="global-container-lojas">
-        <h1>Conheça nossas lojas</h1>
+        <h2>Nossas lojas</h2>
       </div>
       <div className="contato">
-        <p>Entre em Contato agora</p>
+        <p>Fale conosco!</p>
         <img src={ws} width="50" height="50" />
       </div>
       <div className="wrap">
@@ -57,6 +57,10 @@ const Lojas = () => {
         }
         .contato img {
           border-radius: 100%;
+          margin-left: 20px;
+        }
+        .contato p {
+          margin: 5px;
         }
         @media screen and (max-width: 600px) {
           .global-container-lojas {

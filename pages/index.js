@@ -3,7 +3,7 @@ import Footer from "../components/Footer.js";
 import ws from "./ws.png";
 import img1 from "./img1.jpeg";
 import img2 from "./img2.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const arrow_left = require("./arrow_left.svg");
 const arrow_right = require("./arrow_right.svg");
 
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
         <div>Alugue uma sala comercial para seu empreendimento</div>
         <div className="contato">
-          <p>Entre em Contato agora</p>
+          <p>Fale conosco!</p>
           <img src={ws} width="50" height="50" />
         </div>
 
@@ -94,6 +94,7 @@ const Home = () => {
         }
         .contato img {
           border-radius: 100%;
+          margin-left: 20px;
         }
         .imagens-principal {
           display: flex;
@@ -101,6 +102,7 @@ const Home = () => {
         }
         .imagens-principal button {
           height: 40px;
+          background: transparent;
         }
         .arrow-left {
           position: relative;
@@ -109,6 +111,9 @@ const Home = () => {
         .arrow-right {
           position: relative;
           right: 40px;
+        }
+        .contato p {
+          margin: 5px;
         }
         @media screen and (min-width: 600px) {
           .global-container {
