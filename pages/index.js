@@ -1,6 +1,8 @@
 import Nave from "../components/Nave.js";
 import Footer from "../components/Footer.js";
 import ws from "./ws.png";
+const arrow_left = require("./arrow_left.svg");
+const arrow_right = require("./arrow_right.svg");
 
 const Home = () => {
   return (
@@ -8,7 +10,16 @@ const Home = () => {
       <Nave />
       <div className="global-container">
         <h2>Centro Comercial Classica</h2>
-        <img className="principal" />
+        <div className="imagens-principal">
+          <button className="arrow-left">
+            <img src={arrow_left} alt="esquerda" />
+          </button>
+          <img className="principal" />
+          <button className="arrow-right">
+            <img src={arrow_right} alt="direita" />
+          </button>
+        </div>
+
         <div>Alugue uma sala comercial para seu empreendimento</div>
         <span>Entre em Contato agora</span>
         <img src={ws} width="50" height="50" />
@@ -46,6 +57,21 @@ const Home = () => {
           border: none;
           outline: none;
           list-style-type: none;
+        }
+        .imagens-principal {
+          display: flex;
+          align-items: center;
+        }
+        .imagens-principal button {
+          height: 40px;
+        }
+        .arrow-left {
+          position: relative;
+          left: 40px;
+        }
+        .arrow-right {
+          position: relative;
+          right: 40px;
         }
         @media screen and (min-width: 600px) {
           .global-container {
