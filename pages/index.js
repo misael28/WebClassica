@@ -2,21 +2,43 @@ import Nave from "../components/Nave.js";
 import Footer from "../components/Footer.js";
 import ws from "./ws.png";
 import img1 from "./img1.jpeg";
+import img2 from "./img2.jpg";
+import { useEffect, useState } from "react";
 const arrow_left = require("./arrow_left.svg");
 const arrow_right = require("./arrow_right.svg");
 
 const Home = () => {
+  const imagens = [img1, img2];
+  const [paraFrente, setParaFrente] = useState(1);
   return (
     <div>
       <Nave />
       <div className="global-container">
         <h2>Centro Comercial Classica</h2>
         <div className="imagens-principal">
-          <button className="arrow-left">
+          <button
+            className="arrow-left"
+            onClick={() => {
+              if (paraFrente <= 1) {
+                setParaFrente(imagens.length);
+              } else {
+                setParaFrente(paraFrente - 1);
+              }
+            }}
+          >
             <img src={arrow_left} alt="esquerda" />
           </button>
-          <img className="principal" src={img1} />
-          <button className="arrow-right">
+          <img className="principal" src={imagens[paraFrente - 1]} />
+          <button
+            className="arrow-right"
+            onClick={() => {
+              if (imagens.length === paraFrente) {
+                setParaFrente(1);
+              } else {
+                setParaFrente(paraFrente + 1);
+              }
+            }}
+          >
             <img src={arrow_right} alt="direita" />
           </button>
         </div>
