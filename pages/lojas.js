@@ -1,6 +1,7 @@
 import Cards from "../components/Cards.js";
 import Footer from "../components/Footer.js";
 import Nave from "../components/Nave.js";
+import ws from "./ws.png";
 const Lojas = () => {
   return (
     <div>
@@ -8,13 +9,17 @@ const Lojas = () => {
       <div className="global-container-lojas">
         <h1>Conheça nossas lojas</h1>
       </div>
+      <div className="contato">
+        <p>Entre em Contato agora</p>
+        <img src={ws} width="50" height="50" />
+      </div>
       <div className="wrap">
         <Cards />
         <Cards />
         <Cards />
-		<Cards />
-		<Cards />
-		<Cards />
+        <Cards />
+        <Cards />
+        <Cards />
       </div>
       <Footer />
       <style jsx>{`
@@ -40,6 +45,18 @@ const Lojas = () => {
         .wrap {
           display: flex;
           flex-wrap: wrap;
+        }
+        .contato {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          right: 10px;
+          width: 100px;
+          background: #370003;
+          color: white;
+        }
+        .contato img {
+          border-radius: 100%;
         }
         @media screen and (max-width: 600px) {
           .global-container-lojas {
