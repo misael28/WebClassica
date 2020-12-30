@@ -19,10 +19,12 @@ const Home = () => {
             <img src={arrow_right} alt="direita" />
           </button>
         </div>
-
         <div>Alugue uma sala comercial para seu empreendimento</div>
-        <span>Entre em Contato agora</span>
-        <img src={ws} width="50" height="50" />
+        <div className="contato">
+          <p>Entre em Contato agora</p>
+          <img src={ws} width="50" height="50" />
+        </div>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -57,6 +59,18 @@ const Home = () => {
           border: none;
           outline: none;
           list-style-type: none;
+        }
+        .contato {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          right: 10px;
+          width: 100px;
+          background: #370003;
+          color: white;
+        }
+        .contato img {
+          border-radius: 100%;
         }
         .imagens-principal {
           display: flex;
