@@ -1,6 +1,7 @@
 import Nave from "../components/Nave.js";
 import Footer from "../components/Footer.js";
 import ws from "./ws.png";
+import img1 from "./img1.jpeg";
 const arrow_left = require("./arrow_left.svg");
 const arrow_right = require("./arrow_right.svg");
 
@@ -14,7 +15,7 @@ const Home = () => {
           <button className="arrow-left">
             <img src={arrow_left} alt="esquerda" />
           </button>
-          <img className="principal" />
+          <img className="principal" src={img1} />
           <button className="arrow-right">
             <img src={arrow_right} alt="direita" />
           </button>
@@ -89,7 +90,7 @@ const Home = () => {
         }
         @media screen and (min-width: 600px) {
           .global-container {
-            min-height: 10em;
+            min-height: 30em;
             min-width: 30em;
             padding: 0 0.5rem;
             display: flex;
@@ -100,7 +101,7 @@ const Home = () => {
           .principal {
             display: flex;
             flex-growth: growth;
-            height: 40vh;
+            height: 45em;
             min-width: 45em;
             background-color: grey;
           }
@@ -118,7 +119,7 @@ const Home = () => {
           .principal {
             display: flex;
             flex-growth: growth;
-            height: 20vh;
+            height: 20em;
             min-width: 20em;
             background-color: grey;
           }
@@ -136,7 +137,7 @@ const Home = () => {
           .principal {
             display: flex;
             flex-growth: growth;
-            height: 15vh;
+            height: 15em;
             min-width: 15em;
             background-color: grey;
           }
